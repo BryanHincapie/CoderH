@@ -1,0 +1,308 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+   margin: 10px;
+   padding: 0%;
+}
+
+.header {
+    text-align: right;
+    background-color: rgb(226, 171, 174);
+    padding: 5px;
+    margin: 5px;
+    grid-area: header;
+}
+
+nav ul  {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.carrito {
+ position: relative;
+  top: 0px;
+ right: 120px;
+ line-height: -100px;
+
+}
+
+body {
+    background-color: rgb(248, 212, 218);
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.producto1{
+    grid-area: producto1;
+    display: flex;
+    justify-content: center;
+}
+
+.producto2{
+ grid-area: producto2;
+ display: flex;
+    justify-content: center;
+ 
+}
+
+.producto3{
+    grid-area: producto3;
+    display: flex;
+    justify-content: center;
+}
+
+.producto4{
+   grid-area: producto4;
+   display:  flex;
+   justify-content: center;
+}
+.titulo{
+    grid-area: titulo;
+    display:  flex;
+    justify-content: center;
+    
+}
+.footer{
+    grid-area: footer;
+   
+}
+
+.contenedor{
+ gap: 20px; 
+  display: grid;
+ grid-template-areas: 
+ "header header"
+ "titulo titulo"
+ "producto1 producto2"
+ "producto3 producto4"
+ "footer footer";
+  padding: 10px;
+ margin: 10px;
+ grid-column-gap: 100px;
+ grid-row-gap: 10px;
+ 
+}
+
+input {
+    position: relative;
+    left: 900px;
+    top: -110px;
+}
+ 
+
+img {
+    display: flex;
+    
+    top: 150px;
+    left: 50px;
+    right: 10px;
+    width: 300px;
+    margin: 0px;
+    padding: 10px;
+    
+
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    top: 1px;
+    width: 100px;
+}
+
+p {
+    display: flex;
+    align-items:flex-start;
+    justify-content:left;
+    
+}
+
+.menu {
+    display: inline-block;
+   
+ height: 5px;
+ background-color: rgb(226, 171, 174);
+ text-align: left;
+ font: bold 18px 'Montserrat', sans-serif ;
+ 
+
+}  
+
+.articulo_1 {
+    border: 5px black solid;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.articulo_2 {
+    border: 5px black solid;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.texton{
+    grid-area: texto;
+}
+.imgnosotros{
+grid-area: imgnosotros;
+}
+
+.imagenNosotros {
+    display: flex;
+    position:relative ;
+    left: 0px;
+    top: 1px;
+   
+    width: 600px;
+}
+
+h1 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+h6 {
+    line-height: 0px;
+}
+
+.finalizar {
+    background-color: darkred;
+    color: rgb(252, 212, 220);
+    position: relative;
+   left: 990px;
+    padding: 10px;
+    top: 0px;
+    font-size: large;
+}
+.codigo {
+    
+    top: -100px;
+    padding: 5px;
+    margin: 0px;
+    left: 1000px;
+}
+
+
+footer {
+   
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(184, 159, 169);
+    color: lightslategray;
+    bottom: 0;
+    margin-top: auto;
+}
+
+@media (max-width:500px){
+    .contenedor{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "producto1"
+        "producto2"
+        "producto3"
+        "producto4"
+        "footer";
+    }
+    
+   
+}
+
+@media (min-width:700px){
+    .contenedor{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "titulo titulo "
+        "producto1  producto2"
+        
+        "producto3  producto4"
+        
+        "footer footer ";
+    }
+    
+   
+}
+
+@media (min-width:928px){
+    .contenedor{
+        display: grid;
+        grid-template-areas: 
+        "header header header header"
+        "titulo titulo titulo titulo "
+        "producto1  producto2 producto3  producto4"
+        "footer footer footer footer ";
+    }
+    
+   
+}
+
+
+@media (max-width:500px){
+    .contenedorn{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "imgnosotros"
+        "texto"
+        "footer";
+
+    }
+    
+    .imagenNosotros {
+        display: flex;
+        position:relative ;
+        left: 0px;
+        top: 1px;
+       
+        width: 300px;
+    }
+}
+
+@media (min-width:700px){
+    .contenedorn{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        ". titulo ."
+        ". imgnosotros ."
+        ". texto ."
+        "footer footer footer";
+
+    }
+    
+    .imagenNosotros {
+        display: flex;
+        position:relative ;
+        left: 0px;
+        top: 1px;
+       
+        width: 800px;
+    }
+}
+@media (min-width:928px){
+    .contenedorn{
+        display: grid;
+        grid-template-areas: 
+        "header header header header"       
+        ". titulo titulo ."
+        ". texto texto ."
+        "imgnosotros imgnosotros imgnosotros imgnosotros"
+        "footer footer footer footer";
+    }
+    
+    .imagenNosotros {
+        display: flex;
+        position:relative ;
+        left: 0px;
+        top: 1px;
+       
+        width: 1000px;
+    }
+}
