@@ -34,28 +34,47 @@ body {
 }
 
 .producto1{
+    transition-property: all;
+    transition-duration: 1s;
     grid-area: producto1;
     display: flex;
     justify-content: center;
 }
-
+.producto1:hover{
+   transform: scale(2);
+}
 .producto2{
+    transition-property: all;
+    transition-duration: 1s;
  grid-area: producto2;
  display: flex;
     justify-content: center;
  
 }
+.producto2:hover{
+    transform: scale(2);
+}
 
 .producto3{
+    transition-property: all;
+    transition-duration: 1s;
     grid-area: producto3;
     display: flex;
     justify-content: center;
 }
+.producto3:hover{
+    transform: scale(2);
+}
 
 .producto4{
+    transition-property: all;
+    transition-duration: 1s;
    grid-area: producto4;
    display:  flex;
    justify-content: center;
+}
+.producto4:hover{
+    transform: scale(2);
 }
 .titulo{
     grid-area: titulo;
@@ -97,7 +116,7 @@ img {
     top: 150px;
     left: 50px;
     right: 10px;
-    width: 300px;
+    width: 150px;
     margin: 0px;
     padding: 10px;
     
@@ -190,11 +209,11 @@ h6 {
 footer {
    
     text-align: center;
-    padding: 1em;
+    padding: 1px;
     background-color: rgb(184, 159, 169);
     color: lightslategray;
     bottom: 0;
-    margin-top: auto;
+    margin-top:0;
 }
 
 @media (max-width:500px){
